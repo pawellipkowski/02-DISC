@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISC Text Transformer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DISC Text Transformer</h1>
+        
+        <div class="text-areas">
+            <div class="input-section">
+                <h2>Input Text</h2>
+                <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+            </div>
+            
+            <div class="buttons-section">
+                <button class="disc-btn d-style" onclick="transformText('D')">
+                    D - Dominance
+                    <span class="tooltip">Direct & Results-Oriented</span>
+                </button>
+                <button class="disc-btn i-style" onclick="transformText('I')">
+                    I - Influence
+                    <span class="tooltip">Enthusiastic & Friendly</span>
+                </button>
+                <button class="disc-btn s-style" onclick="transformText('S')">
+                    S - Steadiness
+                    <span class="tooltip">Supportive & Patient</span>
+                </button>
+                <button class="disc-btn c-style" onclick="transformText('C')">
+                    C - Conscientiousness
+                    <span class="tooltip">Precise & Structured</span>
+                </button>
+            </div>
+
+            <div class="output-section">
+                <h2>Transformed Text</h2>
+                <textarea id="outputText" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
